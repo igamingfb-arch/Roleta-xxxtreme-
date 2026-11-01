@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08090d"><title>Lightning AI | Intelligence Terminal</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="ambient"></div>
+<header class="topbar">
+  <a class="brand" href="/"><span class="brand-mark">ϟ</span><span><b>LIGHTNING <em>AI</em></b><small>INTELLIGENCE TERMINAL</small></span></a>
+  <div class="top-right"><span class="source-dot"></span><span id="connection">CONECTANDO À FONTE</span><button id="refresh" class="refresh">↻ <span>ATUALIZAR</span></button></div>
+</header>
+<main>
+  <section class="heading">
+    <div><div class="eyebrow">XXXTREME LIGHTNING ROULETTE <span class="slash">/</span> CENTRAL DE MONITORAMENTO</div>
+    <h1>LIGHTNING <span>RADAR 600+</span></h1><p>Inteligência de histórico e monitoramento de multiplicadores.</p></div>
+    <div class="range-chip"><span class="pulse"></span> FAIXA MONITORADA <b>600x — 2.000x</b></div>
+  </section>
+  <div id="notice" class="notice"><span class="notice-icon">↻</span> Aguardando conexão com CasinoScores…</div>
+  <section class="metric-grid">
+    <article class="metric"><div class="metric-label">GIROS NO HISTÓRICO <span>01</span></div><strong id="total">—</strong><small>Registros recebidos da fonte</small><div class="metric-foot"><i class="bar neutral"></i></div></article>
+    <article class="metric gold-card"><div class="metric-label">RAIOS 600x–2.000x <span>02</span></div><strong id="hits">—</strong><small>Ocorrências identificadas</small><div class="metric-foot"><i class="bar goldbar"></i></div></article>
+    <article class="metric red-card"><div class="metric-label">MAIOR MULTIPLICADOR <span>03</span></div><strong id="max">—</strong><small>Maior valor no histórico recebido</small><div class="metric-foot"><i class="bar redbar"></i></div></article>
+    <article class="metric"><div class="metric-label">ÚLTIMA LEITURA <span>04</span></div><strong id="updated" class="time-value">—</strong><small>Horário da última consulta bem-sucedida</small><div class="metric-foot"><i class="bar neutral"></i></div></article>
+  </section>
+  <section class="main-grid">
+    <article class="panel radar-panel">
+      <div class="panel-head"><div><div class="eyebrow">01 / DESTAQUES</div><h2>Radar de multiplicadores</h2></div><span class="outline-tag">600x A 2.000x</span></div>
+      <div id="highlights" class="empty">Aguardando dados reais da fonte…</div>
+      <div class="panel-note"><span class="gold-text">ϟ</span> Somente multiplicadores identificados no histórico recebido serão exibidos.</div>
+    </article>
+    <article class="panel source-panel">
+      <div class="panel-head"><div><div class="eyebrow">02 / CONEXÃO</div><h2>Fonte de dados</h2></div><span class="source-label">CASINOSCORES</span></div>
+      <div class="source-status"><span class="source-dot large"></span><div><b id="sourceState">Verificando conexão</b><small>Consulta automática programada a cada 35 segundos</small></div></div>
+      <a class="source-link" href="https://www.casino.org/casinoscores/pt-br/xxxtreme-lightning-roulette/" target="_blank" rel="noopener">Abrir histórico no CasinoScores ↗</a>
+      <div class="source-foot">A leitura depende da disponibilidade e da estrutura pública da página de origem.</div>
+    </article>
+  </section>
+  <section class="panel history-panel">
+    <div class="panel-head"><div><div class="eyebrow">03 / ATIVIDADE RECENTE</div><h2>Últimos resultados recebidos</h2></div><span class="live-label"><i></i> HISTÓRICO</span></div>
+    <div class="table-scroll"><table><thead><tr><th>HORÁRIO</th><th>NÚMERO</th><th>MULTIPLICADOR</th><th>DESTAQUE</th></tr></thead><tbody id="history"><tr><td colspan="4" class="empty">Aguardando dados reais…</td></tr></tbody></table></div>
+    <div class="table-foot">Exibindo até 30 registros mais recentes disponíveis no retorno da fonte.</div>
+  </section>
+
+  <section class="panel alerts-panel">
+    <div class="panel-head">
+      <div><div class="eyebrow">04 / MONITORAMENTO DE SEQUÊNCIA</div><h2>Radar de rodadas</h2></div>
+      <button id="enableAlerts" class="refresh alert-button">ATIVAR NOTIFICAÇÕES</button>
+    </div>
+    <p class="alerts-intro">Após cada resultado com multiplicador de raio, o sistema acompanha a 8ª, 9ª, 10ª e 11ª rodada seguinte, independentemente do valor do multiplicador.</p>
+    <div id="roundAlerts" class="round-alerts"><div class="empty">Aguardando histórico para iniciar a contagem…</div></div>
+    <div id="notificationState" class="notification-state">Notificações do navegador ainda não foram ativadas.</div>
+  </section>
+  <section class="disclaimer"><span class="warning-icon">!</span><div><b>INFORMAÇÃO IMPORTANTE</b><p>Este painel organiza resultados anteriores. Roletas são jogos aleatórios: histórico, frequência e intervalos não permitem prever o próximo giro nem garantem ganhos. Dados não identificados pela fonte não serão inventados ou estimados.</p></div></section>
+</main>
+<footer><span>ϟ LIGHTNING AI</span><span>INTELLIGENCE TERMINAL · VERSÃO WEB</span></footer>
+<script src="/app.js"></script>
+</body></html>
